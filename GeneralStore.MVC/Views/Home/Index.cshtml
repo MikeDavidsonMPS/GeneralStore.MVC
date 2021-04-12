@@ -1,0 +1,32 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="jumbotron">
+    <h1>General Store</h1>
+    <p class="lead">
+        Our General Store, located in rural Indiana, is host to a multitude of fine food and items of distinction.<br />
+        Come browse our products and see what we have for you.</p>
+    <p>@Html.ActionLink("Check Out Our Products", "Index", "Product", null, new { @class = "btn btn-primary btn-large" })</p>
+    <p>@Html.ActionLink("Learn More About Us", "About")</p>
+</div>
+
+<div class="row">
+    <div class="col-md-4">
+        <h2>Products</h2>
+        <p>
+            Please Visit our wide varity of products 
+        </p>
+        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301865">Take a Look &raquo;</a></p>
+    </div>
+    <div class="col-md-4">
+        <h2>Our Customers</h2>
+        <p>Join our customer list</p>
+        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301866">Join Today &raquo;</a></p>
+    </div>
+    <div class="col-md-4">
+        <h2>Transactions</h2>
+        <p>Check on your order</p>
+        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301867">Check Here &raquo;</a></p>
+    </div>
+</div>
