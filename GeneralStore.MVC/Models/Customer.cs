@@ -9,6 +9,7 @@ namespace GeneralStore.MVC.Models
     public class Customer
     {
         [Key]
+        [Display(Name = "CustomerID")]
         public int CustomerID { get; set; }
         [Required]
         [Display(Name = "First Name")]
