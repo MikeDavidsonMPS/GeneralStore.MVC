@@ -9,7 +9,6 @@ namespace GeneralStore.MVC.Models
     public class Customer
     {
         [Key]
-        [Display(Name = "CustomerID")]
         public int CustomerID { get; set; }
         [Required]
         [Display(Name = "First Name")]
@@ -18,7 +17,7 @@ namespace GeneralStore.MVC.Models
         [Display(Name = "Last Name")]
         public string LastName { get; set; }
         [Display(Name = "Full Name")]
-        public string FullName { get; }
+        public string FullName { get; set; }
 
     }
 }

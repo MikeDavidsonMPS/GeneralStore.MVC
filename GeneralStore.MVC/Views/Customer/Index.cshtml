@@ -5,11 +5,13 @@
 
 <h2>Customer List</h2>
 
+
+<p>
+    @Html.ActionLink("Add Customer", "Create")
+</p>
+
 <table class="table">
     <tr>
-        <th>
-            @Html.DisplayNameFor(model => model. CustomerID) 
-        </th>
         <th>
             @Html.DisplayNameFor(model => model.FirstName)
         </th>
@@ -25,9 +27,6 @@
     {
         <tr>
             <td>
-                @Html.DisplayFor(modelItem => item.CustomerID)
-            </td>
-            <td>
                 @Html.DisplayFor(modelItems => item.FirstName)
             </td>
             <td>
@@ -38,7 +37,7 @@
             </td>
             <td>
                 @Html.ActionLink("Change", "Edit", new { id = item.CustomerID }) |
-                @Html.ActionLink("More Info", "Details", new { id = item.CustomerID }) |
+                @Html.ActionLink("More Info", "Detail", new { id = item.CustomerID }) |
                 @Html.ActionLink("Remove", "Delete", new { id = item.CustomerID })
             </td>
         </tr>

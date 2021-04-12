@@ -14,11 +14,11 @@ namespace GeneralStore.MVC.Controllers
         // Add the application DB Context (link to the database)
         private ApplicationDbContext _db = new ApplicationDbContext();
 
-        // GET: Customer
+        // GET: Customer Index
         public ActionResult Index()
         {
             List<Customer> customerList = _db.Customer.ToList();
-            List<Customer> orderedList = customerList.OrderBy(prod => prod.FullName).ToList();
+            List<Customer> orderedList = customerList.OrderBy(cust => cust.FullName).ToList();
             return View(orderedList);
             //return View(_db.Customer.ToList());
         }
@@ -43,11 +43,10 @@ namespace GeneralStore.MVC.Controllers
             return View(customer);
         }
 
-        // GET : Delete
-        // Customer/Delete/{id}
+        // GET: Customer/Delete/{id}
 
         [HttpPost, ActionName("Delete")]
-        [ValidateAntiForgeryToken]
+
         public ActionResult Delete(int? id)
         {
             if (id == null)
@@ -62,8 +61,8 @@ namespace GeneralStore.MVC.Controllers
             return View(customer);
         }
 
-        // POST : Delete
-        // Customer/Delete/{id}
+        // POST: Customer/Delete/{id}
+
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public ActionResult Delete(int id)
@@ -74,8 +73,7 @@ namespace GeneralStore.MVC.Controllers
             return RedirectToAction("Index");
         }
 
-        // GET : Edit
-        // Customer/Edit/{id}
+        // GET: Customer/Edit/{id}
         public ActionResult Edit(int? id)
         {
             if (id == null)
@@ -90,7 +88,8 @@ namespace GeneralStore.MVC.Controllers
             return View(customer);
         }
 
-        // POST : Edit// Customer/Edit/{id}
+        // POST:Customer/Edit/{id}
+
         [HttpPost, ActionName("Edit")]
         [ValidateAntiForgeryToken]
         public ActionResult Edit(Customer customer)

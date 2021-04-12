@@ -179,9 +179,9 @@
     <Compile Include="Migrations\202104082302243_InitialCreate.Designer.cs">
       <DependentUpon>202104082302243_InitialCreate.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\202104121709464_Customer Data.cs" />
-    <Compile Include="Migrations\202104121709464_Customer Data.Designer.cs">
-      <DependentUpon>202104121709464_Customer Data.cs</DependentUpon>
+    <Compile Include="Migrations\202104121819457_Customer Database.cs" />
+    <Compile Include="Migrations\202104121819457_Customer Database.Designer.cs">
+      <DependentUpon>202104121819457_Customer Database.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
@@ -279,8 +279,8 @@
     <EmbeddedResource Include="Migrations\202104082302243_InitialCreate.resx">
       <DependentUpon>202104082302243_InitialCreate.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202104121709464_Customer Data.resx">
-      <DependentUpon>202104121709464_Customer Data.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202104121819457_Customer Database.resx">
+      <DependentUpon>202104121819457_Customer Database.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
