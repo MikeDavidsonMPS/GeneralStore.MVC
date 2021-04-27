@@ -103,8 +103,8 @@ namespace GeneralStore.MVC.Controllers
             return View(customer);
         }
 
-        // GET : Details
-        // Customer/Details/{id}
+        // GET: Customer/Details/{id}
+
         public ActionResult Details(int? id)
         {
             if (id == null)

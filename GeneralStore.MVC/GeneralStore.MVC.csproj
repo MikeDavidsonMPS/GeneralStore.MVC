@@ -183,6 +183,10 @@
     <Compile Include="Migrations\202104121819457_Customer Database.Designer.cs">
       <DependentUpon>202104121819457_Customer Database.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202104121944059_Customer 2.cs" />
+    <Compile Include="Migrations\202104121944059_Customer 2.Designer.cs">
+      <DependentUpon>202104121944059_Customer 2.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Customer.cs" />
@@ -281,6 +285,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202104121819457_Customer Database.resx">
       <DependentUpon>202104121819457_Customer Database.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202104121944059_Customer 2.resx">
+      <DependentUpon>202104121944059_Customer 2.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

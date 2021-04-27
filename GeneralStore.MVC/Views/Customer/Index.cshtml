@@ -33,12 +33,9 @@
                 @Html.DisplayFor(modelItem => item.LastName)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.FullName)
-            </td>
-            <td>
                 @Html.ActionLink("Change", "Edit", new { id = item.CustomerID }) |
                 @Html.ActionLink("More Info", "Detail", new { id = item.CustomerID }) |
-                @Html.ActionLink("Remove", "Delete", new { id = item.CustomerID })
+                @Html.ActionLink("Remove", "Delete", new { id = item.CustomerID }) |
             </td>
         </tr>
     }
